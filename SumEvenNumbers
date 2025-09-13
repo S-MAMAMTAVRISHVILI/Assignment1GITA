@@ -1,0 +1,17 @@
+function sumEvenNumbers(arg) {
+    let sum = 0
+    for(let i = 0; i <= arg; i++) {
+        if(i % 2 === 0) {
+            sum += i
+        }
+    }
+    return sum
+}
+
+//few checks
+console.log(sumEvenNumbers(0))
+console.log(sumEvenNumbers(2))
+console.log(sumEvenNumbers(5))
+console.log(sumEvenNumbers(8))
+console.log(sumEvenNumbers(31))
+console.log(sumEvenNumbers(100))

@@ -1,0 +1,16 @@
+function countVowels(arg) {
+    const vowels = new Set(["A", "E", "I", "O", "U"])
+    const word = String(arg)
+    let count = 0;
+    for(let i = 0; i < word.length; i++) {
+        if(vowels.has(word.at(i).toUpperCase())) count++
+    }
+    return count
+}
+
+//few checks
+console.log(countVowels("aeiou"))
+console.log(countVowels("abbbebbibbobbu"))
+console.log(countVowels("drfgwg"))
+console.log(countVowels("AEIOU"))
+console.log(countVowels(""))
