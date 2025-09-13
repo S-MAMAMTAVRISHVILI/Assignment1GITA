@@ -3,6 +3,7 @@ function checkPassword(arg) {
     if(pas.length <= 8) return false
     let containsDigit = false
     let containsCapital = false
+    //using ASCII table for comparison
     for(let i = 0; i < pas.length; i++) {
         if(pas.charCodeAt(i) >= 65 && pas.charCodeAt(i) <= 90) containsCapital = true
         if(pas.charCodeAt(i) >= 48 && pas.charCodeAt(i) <= 57) containsDigit = true
